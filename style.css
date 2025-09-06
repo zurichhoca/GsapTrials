@@ -11,6 +11,7 @@ body{
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
+
     height: 100vh;
 
 }
@@ -37,7 +38,7 @@ body{
 .hero-container{
     display: flex;
     height: 95vh;
-    width: 100%;
+    width: 90%;
     justify-content: space-evenly;
     gap: 50px;
     align-items: center;
@@ -51,8 +52,11 @@ img{
 }
 
 .hero-text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     width: 45%;
-    height: auto;
+    height: 100%;
     text-align: center;
 
 }
@@ -90,6 +94,13 @@ img{
     border-radius: 20px;
     cursor: pointer;
 }
+.home-icon{
+    width: 25px;
+    height: 35px;
+    margin-right: 10px;
+    vertical-align: middle;
+    opacity: 0.6;
+}
 
 .check-icon{
     display: none;
@@ -104,4 +115,39 @@ img{
     vertical-align: middle;
     
 }
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 50px;
+    height: 18vh;
 
+}
+    
+.logo h2{
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    font-weight: 500;
+    border-radius: 15px;
+    background-color: white;
+    border: 1px solid gray;
+    font-family:"clash display", sans-serif;
+    color: black;
+}
+.nav-links{
+    display: flex;
+    gap: 25px;
+}
+
+
+.menu-icon, .phone-icon{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    border:1px solid gray;
+    border-radius: 50%;
+    padding: 15px;
+    transition: all 0.3s ease-in;
+}
