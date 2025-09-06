@@ -1,5 +1,6 @@
 gsap.registerPlugin(TextPlugin, SplitText, ScrollTrigger); 
 
+let container = document.querySelector(".container")
 let text = document.querySelector("#text")
 let point = document.querySelector(".point")
 let hero = document.querySelector(".hero")
