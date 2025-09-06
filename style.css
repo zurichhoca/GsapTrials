@@ -1,4 +1,10 @@
+@font-face {
+    font-family: "clash display";
+    src: url(ClashDisplay-Variable.ttf);
+}
+
 body{
+    font-family: "clash display", sans-serif;
     display: flex;
     padding: 0;
     margin: 0;
@@ -8,14 +14,11 @@ body{
     height: 100vh;
 
 }
-.container{
+/* .container{
    position: absolute;
     top: 0;
-    left: 10%;
-    margin: 120px 0px 0px 0px;
-    
-
-}
+    left: 10%
+} */
 
 #text {
   color: #dfdcff;
@@ -23,32 +26,35 @@ body{
   text-align: center;
 
 }
-.h1 , .point {
+/* .h1 , .point {
+
     font-size: 1em;
     color: tomato;
-}
+} */
 
 /* hero section container */
 
 .hero-container{
     display: flex;
-    height: 90vh;
+    height: 95vh;
     width: 100%;
-    margin: 120px 40px 20px 40px; /* increased top margin from 20px to 120px */
-    justify-content: space-around;
+    justify-content: space-evenly;
     gap: 50px;
     align-items: center;
 }
 img{
-    width: 50%;
+    width: 45%;
+    height: auto;
     height: 100%;
     border-radius: 35px;
     object-fit: cover;
 }
 
 .hero-text-container{
-    width: 50%;
+    width: 45%;
+    height: auto;
     text-align: center;
+
 }
 
 .hero-span{
@@ -57,21 +63,45 @@ img{
     border-radius: 20px;
     color: gray;
     font-size: 1.5em;
-    font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+}
+.hero-span svg{
+  margin-right: 15px;
 }
  
 .hero-h1{
+    font-family: "clash display", sans-serif;
     font-size: 4.5em;
-    font-weight: 700;
-    line-height: 1.3em;
+    font-weight: regular;
+    letter-spacing: 4px;
+    line-height: 1.1em;
     padding: 20px 0px 20px 0px;
 }
 .hero-btn{
-    padding: 15px 30px;
-    font-size: 1.5em;
+    padding: 20px 35px;
+    font-size: 1.6em;
+    background-color: rgb(186, 232, 132);
+    color: black;
     border: none;
-    background-color: black;
-    color: white;
+    letter-spacing: 2px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: all 0.5s ease-in;
     border-radius: 20px;
     cursor: pointer;
 }
+
+.check-icon{
+    display: none;
+    transition: all 0.s ease-out;
+}
+.hero-btn:hover .check-icon{
+    display: inline-block;
+    opacity: 0.6;
+    width: 35px;
+    height: 35px;
+    margin-left: 10px;
+    vertical-align: middle;
+    
+}
+
