@@ -9,17 +9,10 @@ body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    justify-content: center;
-    align-items: center;
 
-    height: 100vh;
 
 }
-/* .container{
-   position: absolute;
-    top: 0;
-    left: 10%
-} */
+
 
 #text {
   color: #dfdcff;
@@ -39,11 +32,12 @@ body{
     display: flex;
     height: 95vh;
     width: 90%;
+    margin: 0 auto;
     justify-content: space-evenly;
     gap: 50px;
     align-items: center;
 }
-img{
+.hero-image{
     width: 45%;
     height: auto;
     height: 100%;
@@ -150,4 +144,16 @@ img{
     border-radius: 50%;
     padding: 15px;
     transition: all 0.3s ease-in;
+}
+
+.menu-icon:hover, .phone-icon:hover{
+    background-color: rgb(186, 232, 132);
+    color: white;
+    transform: scale(1.1);
+}
+
+/* second section styles */
+
+.secondSection{
+    background-image: url(./images/second2Image.jpg);
 }

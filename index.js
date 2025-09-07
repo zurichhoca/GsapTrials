@@ -1,5 +1,5 @@
 
-gsap.registerPlugin(TextPlugin, SplitText, ScrollTrigger); 
+// gsap.registerPlugin(TextPlugin, SplitText, ScrollTrigger); 
 
 let text = document.querySelector("#text")
 let point = document.querySelector(".point")
