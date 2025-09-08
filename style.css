@@ -156,15 +156,18 @@ body{
 
 .textOnLeft{
     padding: 50px;
+
 }
 .textOnLeft p{
    font-size: 1.5em;  
+   text-shadow: 10px 0px 10px 0px;
 }
 
 .textOnLeft h3{
     font-size: 3em;
     letter-spacing: 4px;
-
+    text-shadow: 20px 0px 10px 0px;
+    
 }
 .textOnBottom{
     align-self: flex-end;
@@ -175,13 +178,11 @@ body{
     padding: 20px;
     width: 45%;
     height: 40vh;
-   /* From https://css.glass */
-  /* From https://css.glass */
-background: rgba(255, 255, 255, 0.52);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(14.7px);
--webkit-backdrop-filter: blur(14.7px);
+    background: rgba(255, 255, 255, 0.52);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(14.7px);
+    -webkit-backdrop-filter: blur(14.7px);
 
 }
 .textOnBottom,.partOne,.partTwo,.partThree{
@@ -210,3 +211,49 @@ letter-spacing: 1.5px;
 
 /*  thirsd Section */
 
+.thirdSection{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.thirdSectionFirst{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    width: auto;
+    padding: 25px;
+    border: 2px gray solid;
+    border-radius: 15px;
+    box-shadow: 
+    inset 0 0 0 2px #f3f3f3,       /* Inner thin border */
+    0 0 0 2px #ddd;  
+}
+.thirdSectionFirst img{
+    border-radius: 50%;
+    width: 60px;
+    height:60px;
+}
+.thirdSectionFirst h4{
+    color: #414a4c;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+.thirdSectionFirst svg{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid black;
+   padding: 10px;
+}
+.thirdSectionSecond p{
+    font-size: 1.9em;
+    width: 900px;
+    letter-spacing: 2px;
+    height: 40vh;
+
+}
