@@ -11,6 +11,7 @@ let split = SplitText.create(text,{ type: "chars,words,lines" });
 
 
 
+
 heroBtn.addEventListener("click",function(){
             gsap.to(heroBtn, {
             text: "Reserved",
@@ -22,8 +23,33 @@ heroBtn.addEventListener("click",function(){
 
         })
 })
-                              
 
+// menu Icon to get some links
+// ...existing code...
+
+// Fix the selector for menu-section (was missing the dot)
+const menuSection = document.querySelector('.menu-section')                
+const menu = document.querySelector('#menu-icon')
+
+menu.addEventListener("click", () => {
+    // Toggle menu section visibility with GSAP
+    if (menuSection.style.display === 'flex') {
+        gsap.to(menuSection, {
+            opacity: 0,
+            duration: 0.5,
+            onComplete: () => {
+                menuSection.style.display = 'none'
+            }
+        });
+    } else {
+        menuSection.style.display = 'flex';
+        gsap.from(menuSection, {
+            opacity: 0,
+            y: -50,
+            duration: 0.5
+        });
+    }
+});
 
 // let splitHero = SplitText.create([heroSpan,heroH1], {type: "words,chars"})
 
