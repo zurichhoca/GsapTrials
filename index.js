@@ -7,6 +7,7 @@ let hero = document.querySelector(".hero")
 let heroSpan = document.querySelector(".hero-span")
 let heroH1 = document.querySelector(".hero-h1")
 let heroBtn = document.querySelector(".hero-btn")
+let dot = document.querySelector(".dot")
 
 let divOne = document.querySelector(".divOne")
 let divTwo  = document.querySelector(".divTwo")
@@ -180,8 +181,14 @@ gsap.from('.imagesContainer', {
     y: -100,
     opacity: 0,
     duration: 1,
-    delay: 0.3
+
 });
+
+gsap.to(".dot",{
+    opacity:0,
+    duration:1.5,
+    repeat:-1
+})
 
 // menu Icon to get some links
 // ...existing code...
