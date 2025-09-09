@@ -83,6 +83,106 @@ tl2.to([divTen, divNine, divEight, divSeven], {
 });
 
 
+// Register ScrollTrigger plugin (if not already registered)
+
+
+// Hero Section Animation
+gsap.from('.hero-text-container', {
+    scrollTrigger: {
+        trigger: '.hero-container',
+        start: 'top center',
+        end: 'bottom center',
+        toggleActions: 'play none none reverse'
+    },
+    y: 100,
+    opacity: 0,
+    duration: 1
+});
+
+gsap.from('.hero-image', {
+    scrollTrigger: {
+        trigger: '.hero-container',
+        start: 'top center',
+        end: 'bottom center',
+        toggleActions: 'play none none reverse'
+    },
+    y: -100,
+    opacity: 0,
+    duration: 1
+});
+
+
+// Second Section Animation
+gsap.from('.textOnLeft', {
+    scrollTrigger: {
+        trigger: '.secondSection',
+        start: 'top center',
+        toggleActions: 'play none none reverse'
+    },
+    x: -100,
+    opacity: 0,
+    duration: 1
+});
+
+gsap.from('.textOnBottom', {
+    scrollTrigger: {
+        trigger: '.secondSection',
+        start: 'center center',
+        toggleActions: 'play none none reverse'
+    },
+    y: 100,
+    opacity: 0,
+    duration: 1
+});
+
+// Third Section Animation
+gsap.from('.thirdSectionFirst', {
+    scrollTrigger: {
+        trigger: '.thirdSection',
+        start: 'top center',
+        toggleActions: 'play none none reverse'
+    },
+    y: 50,
+    opacity: 0,
+    duration: 1
+});
+
+gsap.from('.thirdSectionSecond', {
+    scrollTrigger: {
+        trigger: '.thirdSection',
+        start: 'top center',
+        toggleActions: 'play none none reverse'
+    },
+    y: 50,
+    opacity: 0,
+    duration: 1,
+    delay: 0.3
+});
+
+// Fourth Section Animation
+gsap.from('.fourthSection h6', {
+    scrollTrigger: {
+        trigger: '.fourthSection',
+        start: 'top center',
+        toggleActions: 'play none none reverse'
+    },
+    y: -100,
+    opacity: 0,
+    duration: 1
+});
+
+gsap.from('.imagesContainer', {
+    scrollTrigger: {
+        trigger: '.fourthSection',
+        start: 'top center',
+        toggleActions: 'play none none reverse'
+    },
+    y: -100,
+    opacity: 0,
+    duration: 1,
+    delay: 0.3
+});
+
 // menu Icon to get some links
 // ...existing code...
 
