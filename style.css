@@ -486,11 +486,12 @@ letter-spacing: 1.5px;
     grid-template-rows:repeat(3,150px) ;
     gap: 30px;
     text-align: center;
-    margin: 50px 20px 0px 20px;
+    margin: 50px 20px 50px 20px;
 
 }
 .gridContainer div{
     border: 1px solid black;
+
 }
 
 .box {
@@ -507,3 +508,56 @@ letter-spacing: 1.5px;
     grid-column: 2;
     grid-row : 1/span3;
 }
+.one,.two,.four,.five,.six,.seven{
+    display: flex;
+    justify-content: space-around;
+}
+.one p ,.two p,.three p,.four p,.five p,.six p,.seven p{
+    font-size: 1.3em;
+    font-weight: 400;
+}
+.three{
+    display: flex;
+    flex-direction: column;
+}
+.gridLastSection{
+    background-image: url(images/second2Image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    height: 778px;
+    width: 1640px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 50px;
+
+
+}
+ .centeralParagraph{
+    font-size: 3rem;
+    font-weight: 450;
+    margin: 0 auto;
+    width:950px;
+    padding: 30px;
+    letter-spacing: 1.4px;
+    background: rgba(255,255,255,0.5);
+-webkit-backdrop-filter: blur(10px);
+backdrop-filter: blur(10px);
+border: 1px solid rgba(255,255,255,0.25);
+border-radius: 20px;
+ }
+ .thirdBtn{
+
+    width: 190px;
+    height: 70px;
+    font-size: 1.4rem;
+    margin: 0 auto;
+    border: none;
+    background-color: black;
+    color: #fefeff;
+    border-radius: 20px;
+ }
