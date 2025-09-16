@@ -2,7 +2,11 @@
     font-family: "clash display";
     src: url(ClashDisplay-Variable.ttf);
 }
-
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+} */
 body{
     font-family: "clash display", sans-serif;
     padding: 0;
@@ -27,15 +31,22 @@ body{
     height: 100vh;
     width: 100%;
     justify-content: space-evenly;
+    flex-direction: row-reverse;
     gap: 50px;
     align-items: center;
 }
-.hero-image{
-    width: 45%;
-    height: 80vh;
-    border-radius: 35px;
-    object-fit: cover;
+.hero-image {
+  width: 700px;
+  height: 700px;
+  object-fit: cover;
+  border-radius: 20px;
+
+  /* clip-path: path("M 20,0 L 680,0 L 600,20 L 500,300 L 500,220 L 350,220 L 330,240 L 330,280 L 310,300 L 20,300 L 0,280 L 0,20 Z"); */
 }
+ 
+
+
+
 
 .hero-text-container{
     display: flex;
@@ -154,6 +165,7 @@ body{
     height: 100vh;
     display: flex;
     justify-content: space-between;
+    align-content: center;
     background-size: cover;
     background-position: center;
     
@@ -163,7 +175,7 @@ body{
     padding: 50px;
 
 }
-.textOnLeft p{
+.textOnLeft p , .firstMode p{
    font-size: 1.5em;  
    text-shadow: 10px 0px 10px 0px;
 }
@@ -192,7 +204,6 @@ body{
 }
 .textOnBottom,.partOne,.partTwo,.partThree{
     border-radius: 20px;
-    border-bottom: 1px solid #000000;
     display: flex;
     justify-content: space-around;
 }
@@ -247,7 +258,7 @@ letter-spacing: 1.5px;
     letter-spacing: 1px;
     line-height: 20px;
 }
-.thirdSectionFirst svg{
+.thirdSectionFirst svg {
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -345,7 +356,6 @@ letter-spacing: 1.5px;
     display: flex; /* Change to flex for horizontal scroll */
     gap: 30px;
     width: 100%;
-
     overflow-x: auto;
     padding: 20px 0;
     scroll-snap-type: x mandatory;
@@ -355,8 +365,8 @@ letter-spacing: 1.5px;
 
 .imagesContainer div {
     flex: 0 0 auto; 
-    width: 500px; /* Set reasonable width */
-    height: 500px; /* Set reasonable height */
+    width: 500px; 
+    height: 500px; 
 }
 
 .imagesContainer div img {
@@ -394,4 +404,106 @@ letter-spacing: 1.5px;
     margin-right: 10px;
     background-color: #000000;
     display: inline-block;
+}
+
+/* fifth section */
+.fifthContainer{
+    margin-top: 100px;
+    height: 100vh;
+    width: 100vw;
+
+}
+.firstMode{
+    text-align: center;
+}
+
+.firstMode h6{
+    font-size: 2.3rem;
+    letter-spacing: 0.35rem;
+    margin-top: 0;
+}
+.secondModeWrapper{
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    gap: 50px;
+
+    color: rgb(0, 0, 0);
+}
+.secondModeWrapper div{
+    width: 440px;
+    height: 100px;
+    background-color: #fefeff;
+
+  
+}
+
+.parts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid #414a4c;
+    border-radius: 25px;
+    padding: 20px 30px;
+
+}
+.numbers{
+    font-size: 2.5rem;
+    font-weight: 600;
+
+}
+.boxTitle{
+    font-size: 1.9rem;
+    margin-bottom: 0;
+    font-weight: 450;
+    letter-spacing: 2px;
+}
+
+.subTitle{
+    margin-top: 0;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+.rightSvg{
+   width: 35px;
+    height: 35px;
+    cursor: pointer;
+    border:1px solid gray;
+    border-radius: 50%;
+    padding: 15px;
+
+}
+.secondMode{
+    margin-top: 100px;
+    font-size: larger;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.gridContainer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:repeat(3,150px) ;
+    gap: 30px;
+    text-align: center;
+    margin: 50px 20px 0px 20px;
+
+}
+.gridContainer div{
+    border: 1px solid black;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 20px;
+  border: 2px solid #333;
+}
+
+.three{
+    grid-column: 2;
+    grid-row : 1/span3;
 }
